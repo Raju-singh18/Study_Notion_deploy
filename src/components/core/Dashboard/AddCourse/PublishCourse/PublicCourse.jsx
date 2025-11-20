@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { useDispatch, useSelector } from "react-redux";
-import IconBtn from "../../../../common/IconBtn";
+import IconBtn from "../../../../Common/IconBtn";
 import { resetCourseState, setStep } from "../../../../../slices/courseSlice";
 import { COURSE_STATUS } from "../../../../../utils/constants";
 import { editCourseDetails } from "../../../../../services/operations/courseDetailsAPI";
