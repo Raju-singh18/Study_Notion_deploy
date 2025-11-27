@@ -9,7 +9,7 @@ export default defineConfig({
     port: 3000,
     proxy:{
       '/api/v1':{
-        target:'http://localhost:4000',
+        target:'https://study-notion-backend-deploy-3n73.vercel.app/',
         changeOrigin:true,
         secure:false,
       }
