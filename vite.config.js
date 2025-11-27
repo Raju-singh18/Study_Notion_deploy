@@ -6,10 +6,10 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react(),],
     server: {
-    port: 3000,
+    port: 5173,
     proxy:{
       '/api/v1':{
-        target:'https://study-notion-backend-deploy-3n73.vercel.app/',
+        target:'https://study-notion-backend-deploy.vercel.app/',
         changeOrigin:true,
         secure:false,
       }

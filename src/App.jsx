@@ -31,6 +31,7 @@ import VideoDetails from "./components/core/ViewCourse/VideoDetails";
 import Instructor from "./components/core/Dashboard/InstructorDashboard/Instructor";
 import CreateCategory from "./components/core/Dashboard/AdminDadhboard/AddCategory/CreateCategory";
 import AllCategory from "./components/core/Dashboard/AdminDadhboard/AdminPanel/AllCategory";
+import CoursePage from "./pages/CoursePage";
 
 function App() {
   const { user } = useSelector((state) => state.profile);
@@ -39,6 +40,7 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/courses" element={<CoursePage/>}/>
         <Route path="/catalog/:catalogName" element={<Catalog />} />
         <Route path="/courses/:courseId" element={<CourseDetails />} />
         <Route
